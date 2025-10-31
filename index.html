@@ -1,70 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dope Styracosaurus</title>
-  <!-- Correct relative path to CSS -->
-  <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Styracosaurus</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <header>
-    <h1>Styracosaurus</h1>
-  </header>
+    <header>
+        <h1>Styracosaurus</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#story">STORY</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Story</a>
-    <a href="#">Contact</a>
-  </nav>
-
-  <main>
-    <section class="intro">
-      <div class="styracosaurus-image">
-      <h2>Life of a Styracosaurus</h2>
-      <img src="https://static.wikia.nocookie.net/naturerules1/images/f/fd/Styracosaurus.jpg/revision/latest/scale-to-width-down/300?cb=20200613172752" alt="Styracosaurus Skull">
-    </div>
-      <p>
-        The Styracosaurus is a genus of herbivorous ceratopsian dinosaur from the Cretaceous period. It is known for its impressive array of horns and frills, which likely served both defensive and display purposes. Styracosaurus lived approximately 75 million years ago and was primarily found in what is now North America.
-      </p>
-    </section>
-
-    <section class="facts">
-      <h2>Facts About Styracosaurus</h2>
-      <ul>
-        <li>Styracosuarus have like a bunch of frill</li>
-        <li>They are pretty small.</li>
-        <li>They are a ceratopsian.</li>
-        <li>They have a beak like mouth.</li>
-      </ul>
-    </section>
-
-    <section class="contact">
-      <h2>Contact to Learn More</h2>
-      <form>
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name">
-
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="email">
-
-        <label for="message">Your Message</label>
-        <textarea id="message" name="message"></textarea>
-
-        <p>Would you like to visit the styracosaurus?</p>
-        <div class="radio-group">
-          <label><input type="radio" name="visit" value="yes"> Yes</label>
-          <label><input type="radio" name="visit" value="no"> No</label>
-          <label><input type="radio" name="visit" value="maybe"> Maybe</label>
+    <section id="home" class="section">
+        <div class="dino-image">
+            <img src="https://static.wikia.nocookie.net/naturerules1/images/f/fd/Styracosaurus.jpg" alt="Styracosaurus family">
         </div>
-
-        <input type="submit" value="Send">
-      </form>
+        <div class="content">
+            <h2>About the Styracosaurus</h2>
+            <p>
+                Styracosaurus (meaning "spiked lizard") is a genus of herbivorous ceratopsian dinosaur that lived in what is now North America during the Late Cretaceous Period, about 75.5 to 74.5 million years ago.
+        </div>
     </section>
-  </main>
 
-  <footer>
-    <p>© Dope styracosaurus</p>
-  </footer>
+    <section id="story" class="section">
+        <h2>Facts About The Styracosaurus</h2>
+        <ul>
+            <li>It has 6 frill atop its dome.</li>
+            <li>It is one of the smaller ceratopsian species.</li>
+            <li> They have a beak like mouth.</li>
+            <li>They are extinct. </li>
+        </ul>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact to learn more</h2>
+        <form action="#" method="post">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <div>
+                <label>Would you like to rub the Styracosaurs belly?</label>
+                <label><input type="radio" name="visit" value="yes"> Yes</label>
+                <label><input type="radio" name="visit" value="no"> No</label>
+                <label><input type="radio" name="visit" value="maybe"> Yes</label>
+            </div>
+
+            <button type="submit">SEND</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Amon Euteneier.</p>
+    </footer>
 </body>
 </html>

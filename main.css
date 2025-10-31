@@ -1,134 +1,159 @@
-/* General page setup */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #cbffc9;
-  color: #222;
-  margin: 0;
-  padding: 0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Header */
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #c6f2c0, #84c48a);
+    color: #2e5c2c;
+    line-height: 1.6;
+}
+
 header {
-  background-image: url("../images/Styracosaurus.jpeg");
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  color: rgb(89, 125, 84);
-  padding: 100px 0;
+    text-align: center;
+    padding: 60px 20px 20px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid #2e5c2c;
 }
 
 header h1 {
-  font-size: 3rem;
-  margin: 0;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    font-size: 3rem;
+    color: #1a301d;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
-/* Navigation bar */
-nav {
-  background-color: #b9d4b7;
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
+nav ul {
+    list-style: none;
+    margin-top: 20px;
+    text-align: center;
 }
 
-nav a {
-  color: #000;
-  text-decoration: none;
-  margin: 0 30px;
-  font-size: 18px;
-  font-weight: bold;
-  transition: color 0.3s;
+nav ul li {
+    display: inline-block;
+    margin: 0 25px;
 }
 
-nav a:hover {
-  color: #005a58;
+nav ul li a {
+    text-decoration: none;
+    color: #2a4229;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
 }
 
-/* Main content area */
-main {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+nav ul li a:hover {
+    background-color: #2e5c2c;
+    color: #ffffff;
+}
+
+.section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.dino-image img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 h2 {
-  border-bottom: 2px solid #9ac39a;
-  padding-bottom: 8px;
-  color: #004904;
+    text-align: center;
+    color: #244624;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-/* Image and text layout */
-.intro img {
-  float: left;
-  margin-right: 20px;
-  width: 200px;
-  border-radius: 8px;
+.content p {
+    text-align: center;
+    font-size: 1.1rem;
 }
 
-.intro p {
-  text-align: justify;
-  line-height: 1.6;
+#story ul {
+    list-style-type: disc;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 25px;
 }
 
-/* Facts section */
-ul {
-  margin-left: 20px;
-  line-height: 1.8;
+#story ul li {
+    margin-bottom: 12px;
 }
 
-/* Contact form */
 form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  background-color: #f1f8f2;
-  padding: 20px;
-  border-radius: 8px;
-  border: 1px solid #cccccc;
+    background-color: #e6f7e6; 
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 0; 
+    border: 2px solid #2e5c2c; 
+    box-shadow: none; /
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-  padding: 10px;
-  border: 1px solid #aaaaaa;
-  border-radius: 5px;
-  font-size: 15px;
-  width: 100%;
+form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #2e5c2c;
 }
 
-textarea {
-  height: 100px;
-  resize: vertical;
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 20px;
+    border: 2px solid #b0d6a5;
+    border-radius: 0; 
+    font-size: 1rem;
 }
 
-.radio-group {
-  margin: 10px 0;
+form input:focus,
+form textarea:focus {
+    border-color: #2e5c2c;
+    outline: none;
 }
 
-input[type="submit"] {
-  width: 100px;
-  padding: 10px;
-  background-color: #a1c39a;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
+form .radio-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
-input[type="submit"]:hover {
-  background-color: #83b17e;
+form input[type="radio"] {
+    margin-right: 6px;
+    cursor: pointer;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px 0;
-  background-color: #b7d4b7;
-  color: #000;
-  margin-top: 30px;
-  font-size: 14px;
+form button,
+form input[type="submit"] {
+    background-color: #2e5c2c;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 0; 
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover,
+form input[type="submit"]:hover {
+    background-color: #1a301d;
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
 }
