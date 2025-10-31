@@ -1,0 +1,134 @@
+/* General page setup */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #cbffc9;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-image: url("../images/Styracosaurus.jpeg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: rgb(89, 125, 84);
+  padding: 100px 0;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Navigation bar */
+nav {
+  background-color: #b9d4b7;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  margin: 0 30px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #005a58;
+}
+
+/* Main content area */
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h2 {
+  border-bottom: 2px solid #9ac39a;
+  padding-bottom: 8px;
+  color: #004904;
+}
+
+/* Image and text layout */
+.intro img {
+  float: left;
+  margin-right: 20px;
+  width: 200px;
+  border-radius: 8px;
+}
+
+.intro p {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* Facts section */
+ul {
+  margin-left: 20px;
+  line-height: 1.8;
+}
+
+/* Contact form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #f1f8f2;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #cccccc;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+  border-radius: 5px;
+  font-size: 15px;
+  width: 100%;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.radio-group {
+  margin: 10px 0;
+}
+
+input[type="submit"] {
+  width: 100px;
+  padding: 10px;
+  background-color: #a1c39a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: #83b17e;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #b7d4b7;
+  color: #000;
+  margin-top: 30px;
+  font-size: 14px;
+}
